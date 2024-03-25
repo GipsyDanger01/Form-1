@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+    <section class="form section">
+        <div class="container">
+            <div class="form__header">
+                <h1>FreeCodeCamp Survey Form</h1>
+                <p>Thank you for taking the time to help us improve the platform</p>
+            </div>
+
+            <div class="form__content">
+                <form>
+                    <div class="form__content__item">
+                        <label for="fullname">Name</label>
+                        <input id="fullname" type="text" value="" placeholder="Please input your full name!" required>
+                    </div>
+                    <div class="form__content__item">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" value="" placeholder="Enter your email!" required>
+                    </div>
+                    <div class="form__content__item">
+                        <label for="age">Age(optional)</label>
+                        <input id="age" type="number" value="" placeholder="Enter your age!" required>
+                    </div>
+                    <div class="form__content__item">
+                        <label for="option">Which option best describes your current role?</label>
+                        <select name="option" id="selection">
+                            <option selected value="" disabled>Select current role</option>
+                            <option value="">Student</option>
+                            <option value="">Full Time Job</option>
+                            <option value="">Full Time Learner</option>
+                            <option value="">Prefer not to say</option>
+                            <option value="">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form__content__itemRadio">
+                        <label for="">Would you recommend freeCodeCamp to a friend?</label>
+                        <div class="form__content__itemRadio__box">
+                            <input type="radio" name="A" id="definitely" value="maybe">
+                            <label for="definitely">Definitely</label>
+                        </div>
+                        <div class="form__content__itemRadio__box">
+                            <input type="radio" name="A" id="maybe" value="maybe">
+                            <label for="maybe">Maybe</label>
+                        </div>
+                        <div class="form__content__itemRadio__box">
+                            <input type="radio" name="A" id="notSure" value="notSure">
+                            <label for="notSure">Not sure</label>
+                        </div>
+                    </div>
+                    <div class="form__content__item">
+                        <label for="selection2">What is your favorite feature of freeCodeCamp?</label>
+                        <select name="option" id="selection">
+                            <option selected value="" disabled>Select an option</option>
+                            <option value="">Challenges</option>
+                            <option value="">Projects</option>
+                            <option value="">Community</option>
+                            <option value="">Open box</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form__content__itemRadio">
+                        <label for="improve">What would you like to see improved? (Check all that apply)</label>
+                        <div class="form__content__itemRadio__box">
+                            <input type="checkbox" id="frontEndProjects">
+                            <label for="frontEndProjects">Front-end Projects</label>
+                        </div>
+                        <div class="form__content__itemRadio__box">
+                            <input type="checkbox" id="backEndProjects">
+                            <label for="backEndProjects">Back-end Projects</label>
+                        </div>
+                        <div class="form__content__itemRadio__box">
+                            <input type="checkbox" id="dataVisualization">
+                            <label for="dataVisualization">Data Visualization</label>
+                        </div>
+                        <div class="form__content__itemRadio__box">
+                            <input type="checkbox" id="challenges">
+                            <label for="challenges">Challenges</label>
+                        </div>
+                        <div class="form__content__itemRadio__box">
+                            <input type="checkbox" id="openSourceCommunity">
+                            <label for="openSourceCommunity">Open Source Community</label>
+                        </div>
+                        <div class="form__content__itemRadio__box">
+                            <input type="checkbox" id="gitterHelpRooms">
+                            <label for="gitterHelpRooms">Gitter help rooms</label>
+                        </div>
+                        <div class="form__content__itemRadio__box">
+                            <input type="checkbox" id="videos">
+                            <label for="videos">Videos</label>
+                        </div>
+                        <div class="form__content__itemRadio__box">
+                            <input type="checkbox" id="cityMeetUps">
+                            <label for="cityMeetUps">City Meetups</label>
+                        </div>
+                        <div class="form__content__itemRadio__box">
+                            <input type="checkbox" id="wiki">
+                            <label for="wiki">Wiki</label>
+                        </div>
+                        <div class="form__content__itemRadio__box">
+                            <input type="checkbox" id="forum">
+                            <label for="forum">Forum</label>
+                        </div>
+                        <div class="form__content__itemRadio__box">
+                            <input type="checkbox" id="additionalCourses">
+                            <label for="additionalCourses">Additional Courses</label>
+                        </div>
+
+                        <div class="form__content__item">
+                            <label for="suggestions">Any comments or suggestions?</label>
+                            <textarea name="" id="message" rows="20" placeholder="Enter your comment here..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="button">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

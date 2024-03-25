@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section {
+  padding: 70px 0px;
+}
+
+body {
+  background-image: url(../survey-form-background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+body::before {
+  content: "";
+  background: linear-gradient(90deg, rgb(235, 24, 12) 0%, rgb(116, 9, 121) 55%, rgb(0, 212, 255) 100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.form {
+  width: 800px;
+  margin: auto;
+}
+.form .form__header {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+.form .form__header h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.form .form__header p {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  font-size: 1.125rem;
+}
+.form .form__content {
+  background: rgba(27, 27, 50, 0.8);
+  padding: 20px 20px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+.form .form__content .form__content__item {
+  margin-bottom: 8px;
+}
+.form .form__content .form__content__item label {
+  display: block;
+  font-size: 1.125rem;
+  padding-bottom: 9px;
+}
+.form .form__content .form__content__item input,
+.form .form__content .form__content__item select {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+.form .form__content .form__content__item input:focus,
+.form .form__content .form__content__item select:focus {
+  /*a reference to "input" tag, do not need to rewrite it */
+  border-color: #80bdff;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 122, 255, 0.25);
+}
+.form .form__content .form__content__item textarea {
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  font-size: 1rem;
+}
+.form .form__content .form__content__itemRadio {
+  margin-bottom: 20px;
+}
+.form .form__content .form__content__itemRadio input {
+  display: inline-block;
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+}
+.form .form__content .form__content__itemRadio .form__content__itemRadio__box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.form .form__content .form__content__itemRadio label {
+  font-size: 1.125rem;
+}
+.form .form__content button {
+  background-color: #02be0b;
+  width: 100%;
+  color: #ffffff;
+  padding: 15px;
+  border: none;
+  font-size: 1.25rem;
+}
+.form .form__content button:hover {
+  animation: hoverChange 1.25s infinite;
+}
+
+@keyframes hoverChange {
+  0% {
+    color: yellow;
+  }
+  25% {
+    color: rgba(240, 153, 22, 0.808);
+  }
+  50% {
+    color: rgba(253, 95, 3, 0.801);
+  }
+  75% {
+    color: rgb(253, 53, 3);
+  }
+  100% {
+    color: rgb(255, 0, 0);
+  }
+}/*# sourceMappingURL=index.css.map */
